@@ -1,0 +1,15 @@
+{
+  "name": "blinddate",
+  "version": "0.1.0",
+  "description": "An accessible add-on to pickadate",
+  "main": "blinddate.js",
+  "peerDependencies": {
+    "pickadate": "^3.5.3",
+    "moment": "^2.8.2",
+    "jquery": "^2.1.1"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "private": true
+}

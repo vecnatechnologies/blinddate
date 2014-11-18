@@ -1,0 +1,16 @@
+@import 'vendor/normalize';
+@import 'base/grid';
+@import 'base/icons';
+@import 'base/typography';
+@import 'modules/buttons';
+@import 'modules/forms';
+@import '../styles/blinddate';
+
+// Page layout
+html {
+  margin: 2em;
+}
+
+body {
+  background: #fff;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "blinddate",
+  "main": "blinddate.js",
+  "version": "0.1.0",
+  "authors": [
+    "Justin Silva <justin.silva@vecna.com>"
+  ],
+  "description": "An accessible add-on to pickadate",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "datepicker",
+    "pickadate",
+    "accessible",
+    "accessibility"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/vecnatechnologies/blinddate",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

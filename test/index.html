@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>blinddate.js Demo</title>
+  <link rel="stylesheet" href="bower_components/pickadate/lib/themes/classic.css">
+  <link rel="stylesheet" href="bower_components/pickadate/lib/themes/classic.date.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="bower_components/mocha/mocha.css">
+</head>
+<body>
+  <h1>blinddate.js</h1>
+  <fieldset>
+    <label for="datepicker">Pick a Date with Native JS</label>
+    <input type="text" id="datepicker" value="Dec 31, 2014">
+  </fieldset>
+  <fieldset>
+    <label for="momentpicker">Pick a Date with Moment</label>
+    <input type="text" id="momentpicker" value="Dec 31, 2014">
+  </fieldset>
+  <fieldset>
+    <label for="sugarpicker">Pick a Date with Sugar</label>
+    <input type="text" id="sugarpicker" value="last day of 2014">
+  </fieldset>
+
+  <h2>Tests</h2>
+  <div id="mocha"></div>
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/pickadate/lib/picker.js"></script>
+  <script src="bower_components/pickadate/lib/picker.date.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <script src="bower_components/sugar/release/sugar.min.js"></script>
+  <script src="bower_components/blinddate/blinddate.js"></script>
+  <script>
+    jQuery(function($) {
+      $('#datepicker').blinddate({
+        parser: 'native'
+      });
+
+      $('#momentpicker').blinddate({
+        parser: 'moment'
+      });
+
+      $('#sugarpicker').blinddate({
+        parser: 'sugar'
+      });
+    });
+  </script>
+  <script src="bower_components/mocha/mocha.js"></script>
+  <script src="bower_components/should/should.js"></script>
+  <script src="js/test.js"></script>
+</body>
+</html>
